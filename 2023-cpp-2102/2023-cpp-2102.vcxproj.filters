@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="반복문 연습.cpp">
+    <ClCompile Include="문법\CPP 기본.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="문법\반복문 연습.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
