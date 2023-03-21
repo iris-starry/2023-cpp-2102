@@ -21,7 +21,7 @@
     <ClCompile Include="문법\반복문 연습.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="문법\참조형 변수.cpp">
+    <ClCompile Include="문법\참조 풀기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
