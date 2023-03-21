@@ -2,14 +2,18 @@
 
 using namespace std;
 
-void 더하라2를(int& num) {
-	num += 2;
+// 함수 오버로딩을 해서
+int sum(int a, int b) {
+	return a + b;
+}
+
+float sum(float a, float b) {
+	return a + b;
 }
 
 int main(void) {
-	int a = 3;
-	더하라2를(a);
+	cout << sum(1, 2) << endl;
+	cout << sum(1.1f, 2.2f) << endl;
 
-	cout << a << endl;
 	return 0;
 }
