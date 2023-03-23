@@ -5,11 +5,12 @@ using namespace std;
 
 int main(void) {
 
-	char str1[30] = "Jiwoo";
-	char str2[30] = "Rock";
+	string str1 = "Jiwoo";
+	string str2 = "Rock";
 
-	strcat(str1, str2);
-	printf("%s \n", str1);
+	str1 = str1 + str2;
+
+	cout << str1 << endl;
 
 	return 0;
 }
