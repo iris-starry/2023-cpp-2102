@@ -3,14 +3,9 @@
 
 int main(void) {
 
-	char str[30] = "Jiwoo";
-	int size = 0;
+	char str[30] = "jiwoo";
 
-	for (int i = 0; str[i] != '\0'; i++) {
-		size++;
-	}
-
-	printf("문자의 길이는 %d \n", size);
+	printf("문자의 길이는 %d \n", strlen(str));
 
 	return 0;
 }
