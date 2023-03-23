@@ -1,13 +1,13 @@
-#include <stdio.h>
-#include <string.h>
+#include <iostream>
+#include <string>  //std::string이 들어있음(.h 노노노)
 
 int main(void) {
-	char str[30] = { 0, };
-	char str2[30] = "c_insert";
+	std::string str1;
+	std::string str2 = "c_insert";
 
-	strcpy(str, str2); //str에다가 str2에 있는 문자열을 넣겠다.
-
-	printf("%s \n", str);
+	str1 = str2;
+	std::cout << str1 << std::endl;
+	
 
 	return 0;
 }
