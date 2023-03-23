@@ -1,11 +1,14 @@
-#include<stdio.h>
-#include<string.h>
+#include<iostream>
+#include<string>
+
+using namespace std;
 
 int main(void) {
 
-	char str[30] = "jiwoo";
+	string str = "Jiwoo";
 
-	printf("문자의 길이는 %d \n", strlen(str));
+	//str.length()도 가능하나. size()를 더 권장
+	cout << "문자열의 길이는 " << str.size() << endl;
 
 	return 0;
 }
