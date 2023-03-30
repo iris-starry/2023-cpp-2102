@@ -23,7 +23,8 @@ C++은 객체 지향 프로그래밍 언어로, 클래스, 객체, 상속 등의
 
 
 ## 📆 Production period
-class time⏰: Tuesday for 2 hours. Thursday for 2 hours
+* year: 2023
+* class time⏰: Tuesday for 2 hours. Thursday for 2 hours
 
 
 ## :clipboard: Goals
