@@ -15,5 +15,9 @@ C++은 객체 지향 프로그래밍 언어로, 클래스, 객체, 상속 등의
 9. 파일 입출력: 파일 입출력에 대한 기본 개념과 파일 처리 함수 등을 학습합니다.
 10. STL: STL(Standard Template Library)의 컨테이너와 알고리즘 등을 학습합니다.
 
+## 🛠️dProduction environment
+Tool: <img src="https://img.shields.io/badge/python-3776AB?style=&logo=python&logoColor=white">
+
 ## 📆 Production period
+class time⏰: Tuesday for 2 hours. Thursday for 2 hours
 
