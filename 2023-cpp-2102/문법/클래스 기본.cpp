@@ -20,6 +20,15 @@ public:
 	//0: 남자, 1: 여자
 	int sex;               
 	string department;
+
+	void print(void) {
+		cout << "이름 " << name << endl;
+		cout << "학번 " << name << endl;
+		cout << "나이 " << name << endl;
+		cout << "성별(0)남자, (1)여자 " << name << endl;
+		cout << "학과 " << name << endl;
+	}
+
 };
 
 
@@ -33,10 +42,7 @@ int main(void) {
 	stu1.sex = 0;
 	stu1.department = "뉴미디어소프트웨어과";
 
-	cout << "이름 " << stu1.name << endl;
-	cout << "학번 " << stu1.name << endl;
-	cout << "나이 " << stu1.name << endl;
-	cout << "성별(0)남자, (1)여자 " << stu1.name << endl;
-	cout << "학과 " << stu1.name << endl;
+	stu1.print();
+	
 	return 0;
 }
