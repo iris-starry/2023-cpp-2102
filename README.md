@@ -27,6 +27,6 @@ C++은 객체 지향 프로그래밍 언어로, 클래스, 객체, 상속 등의
 * class time⏰: Tuesday for 2 hours. Thursday for 2 hours
 
 
-## :clipboard: Goals
+## Goals
 C++ 프로그래밍 능력을 갖추고, 객체 지향 프로그래밍에 대한 이해를 높이는 것이 주된 목표입니다.
 
