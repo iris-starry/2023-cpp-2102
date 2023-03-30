@@ -2,7 +2,7 @@
 
 C++은 객체 지향 프로그래밍 언어로, 클래스, 객체, 상속 등의 개념을 배웁니다.
 
-주로 다음과 같은 내용을 차례대로 배웁니다.
+* **주로 다음과 같은 내용을 차례대로 배웁니다.**
 
 1. 기본 문법: 변수, 상수, 연산자, 조건문, 반복문 등의 기본 문법을 학습합니다.
 2. 함수: 함수의 정의, 호출, 반환값, 매개변수 등에 대해 배웁니다.
@@ -15,11 +15,17 @@ C++은 객체 지향 프로그래밍 언어로, 클래스, 객체, 상속 등의
 9. 파일 입출력: 파일 입출력에 대한 기본 개념과 파일 처리 함수 등을 학습합니다.
 10. STL: STL(Standard Template Library)의 컨테이너와 알고리즘 등을 학습합니다.
 
+
 ## 🛠️dProduction environment
 **Language:** <img src="https://img.shields.io/badge/c++-00599C?style=plastic&logo=c%2B%2B&logoColor=white">
 
 **Tool:** <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=plastic&logo=Visual Studio&logoColor=white">
 
+
 ## 📆 Production period
 class time⏰: Tuesday for 2 hours. Thursday for 2 hours
+
+
+## :clipboard: Goals
+C++ 프로그래밍 능력을 갖추고, 객체 지향 프로그래밍에 대한 이해를 높이는 것이 주된 목표입니다.
 
