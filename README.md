@@ -16,13 +16,13 @@ C++은 객체 지향 프로그래밍 언어로, 클래스, 객체, 상속 등의
 10. STL: STL(Standard Template Library)의 컨테이너와 알고리즘 등을 학습합니다.
 
 
-## 🛠️dProduction environment
+## 🛠️ Development Environment
 **Language:** <img src="https://img.shields.io/badge/c++-00599C?style=plastic&logo=c%2B%2B&logoColor=white">
 
 **Tool:** <img src="https://img.shields.io/badge/Visual Studio-5C2D91?style=plastic&logo=Visual Studio&logoColor=white">
 
 
-## 📆 Production period
+## 📆 period
 * year: 2023
 * class time⏰: Tuesday for 2 hours. Thursday for 2 hours
 
