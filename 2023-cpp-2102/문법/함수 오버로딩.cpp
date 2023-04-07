@@ -12,6 +12,6 @@ float sum_float(float a, float b) {
 
 int main(void) {
 	cout << sum_int(1, 2) << endl;
-	cout << sum_float(1.1, 2.2) << endl;
+	cout << sum_float(1.1f, 2.2f) << endl;
 	return 0;
 }
