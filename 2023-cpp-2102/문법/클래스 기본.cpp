@@ -71,5 +71,7 @@ int main() {
     Student* stu2 = new Student("서강준", 3100, 31, 0, "방송연예과");
     stu2->print();
 
+   delete stu2;
+    
     return 0;
 }
