@@ -62,9 +62,14 @@ private:
 
 int main() {
 
-    //(struct drink)자료형(C++에서는 drink만 써도  됨)/struct 자체가 자료형
+    //정적할당
     Student stu1 = Student("김선희", 2102, 18, 1, "뉴미디어 소프트웨어과");
-    stu1.print();
+    //stu1.print();
+
+    //동적할당은 무조건 포인터로 해야함
+    //TODO: 동적할당 해제하기
+    Student* stu2 = new Student("서강준", 3100, 31, 0, "방송연예과");
+    stu2->print();
 
     return 0;
 }
