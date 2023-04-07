@@ -42,5 +42,8 @@
     <ClCompile Include="문법\string 추가.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="문법\참조형 변수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
