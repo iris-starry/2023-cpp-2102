@@ -1,13 +1,34 @@
 #include<iostream>
 #include<string>
-
 using namespace std;
-
 // 서로 관련된 여러 data들을 하나의 의미있는 구조체로 묶어서 관리
 // 구조체, 클래스는 일반적으로 단어의 첫 글자를 대문자로 합시다
 // class는 디폴트가 private (sttuct는 디폴트가 public)
 class Student {
 public:
+    // 생성자(constructor) : 객체가 생성될 때 호출되는 함수
+    // 생성자를 정의하지 않으면 default로(자동으로) 매개변수가 없는 생성자가 정의된다.
+    // Student() {}
+    Student()
+    {
+        name = "김선희";
+        age = 18;
+        id = 2102;
+        sex = 1;
+        department = "뉴미디어 소프트웨어과";
+    }
+
+        // 클래스는 매개변수를 가질 수 있지만 매개변수가 필요하지 않으니 (void)
+        void print(void) {
+        cout << "이름 : " << name << endl;
+        cout << "학번 : " << id << endl;
+        cout << "나이 : " << age << endl;
+        cout << "성별 (0)남자, (1)은 여자 : " << sex << endl;
+        cout << "학과 : " << department << endl;
+        }
+
+
+private:
     string name;
     int id;
     // 성능 때문에 string으로 하지 않는다.
@@ -19,27 +40,12 @@ public:
     int sex;
     string department;
 
-    // 생성자(constructor) : 객체가 생성될 때 호출되는 함수
-    // 생성자를 정의하지 않으면 default로(자동으로) 매개변수가 없는 생성자가 정의된다.
-    // Student() {}
-
-    void print(void) // 매개변수가 필요하지 않으니 (void)
-    {
-        cout << "이름 : " << name << endl;
-        cout << "학번 : " << id << endl;
-        cout << "나이 : " << age << endl;
-        cout << "성별 (0)남자, (1)은 여자 : " << sex << endl;
-        cout << "학과 : " << department << endl;
-    }
 };
 
-int main() {
-    Student s1;
-    s1.name = "김선희";
-    s1.age = 18;
-    s1.id = 2102;
-    s1.sex = 1;
-    s1.department = "뉴미디어 소프트웨어과";
+int main()
+{
+    // Student s1;
+    Student s1 = Student();
 
     s1.print();
 
