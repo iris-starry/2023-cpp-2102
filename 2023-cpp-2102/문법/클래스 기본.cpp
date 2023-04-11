@@ -12,14 +12,14 @@ public:
     //생성자(constructor) : 객체가 생성될 때 호출되는 함수
     //생성자를 정의하지 않으면 자동(default)으로 매개변수가 없는 생성자가 정의된다
     //Student(){ }
-    //Student() {
-        // name = "김선희";
-        //student_num = 2102;
-        //age = 18;
-        // gender = 1;
-        //department = "소프트웨어과";
+    Student() {
+        name = "김선희";
+        student_num = 2102;
+        age = 18;
+        gender = 1;
+        department = "소프트웨어과";
 
-    //}
+    }
     // : 멤버변수 초기화를 하면 const멤버변수도 초기화 할 수 있다
     Student(string _name, int _student_num, int _age, int _gender, string _department)
         :name(_name), student_num(_student_num), age(_age)
@@ -63,16 +63,23 @@ private:
 int main() {
 
     //정적할당 : 메모리의 크기가 컴파일할 때 결정됨
-    Student stu1 = Student("김선희", 2102, 18, 1, "뉴미디어 소프트웨어과");
+    //Student stu1 = Student("김선희", 2102, 18, 1, "뉴미디어 소프트웨어과");
     //stu1.print();
+    Student stu3[2];
+    for (int i = 0; i < 2; i++)
+        stu3[i].print();
 
     //동적할당은 무조건 포인터로 해야함
     //TODO: 동적할당 해제하기
     //동적할당 : 메모리의 크기가 실행할 때(runtime) 결정됨. heap영역
-    Student* stu2 = new Student("서강준", 3100, 31, 0, "방송연예과");
-    stu2->print();
-
-   delete stu2;
+    // c++ 의 동적할당은 반드시 delete로 해체해야 메모리 누수를 막을 수 있읍
+    //Student* stu2 = new Student("서강준", 3100, 31, 0, "방송연예과");
+    //stu2->print();
+   //delete stu2;
+    Student* stu4 = new Student[2];
+    for (int i = 0; i < 2; i++)
+        stu4[i].print();  //배열의 요소에 해당하는 객체는 멤버를 .으로 접근
+    delete[] stu4;
     
     return 0;
 }
