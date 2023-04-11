@@ -12,18 +12,12 @@ public:
     //생성자(constructor) : 객체가 생성될 때 호출되는 함수
     //생성자를 정의하지 않으면 자동(default)으로 매개변수가 없는 생성자가 정의된다
     //Student(){ }
-    Student() {
-        name = "김선희";
-        student_num = 2102;
-        age = 18;
-        gender = 1;
-        department = "소프트웨어과";
+    Student(){}
 
-    }
     // : 멤버변수 초기화를 하면 const멤버변수도 초기화 할 수 있다
-    Student(string _name, int _student_num, int _age, int _gender, string _department)
-        :name(_name), student_num(_student_num), age(_age)
-        , gender(_gender), department(_department)
+    Student(string _name, int _hakbun, int _age, int _sex, string _department)
+        :name(_name), hakbun(_hakbun), age(_age)
+        , sex(_sex), department(_department)
     {
     }
 
@@ -42,21 +36,28 @@ public:
     void print(void)
     {
         cout << "이름: " << name << endl;
-        cout << "학번: " << student_num << endl;
+        cout << "학번: " << hakbun << endl;
         cout << "나이: " << age << endl;
-        cout << "성별(0)남자,(1)여자: " << gender << endl;
-        cout << "학번: " << department << endl;
+        cout << "성별(0)남자,(1)여자: " << sex << endl;
+        cout << "학과: " << department << endl;
     }
+
+    void set_name(string _name) { name = _name; }
+    void set_hakbun(int _hakbun) { hakbun = _hakbun;}
+    void set_age(int _age) { age = _age; }
+    void set_sex(int _sex) { sex = _sex;  }
+    void set_department(string _department) { department = _department; }
+
 private:
     string name;
     //시험X: 학번을 성능때문에 뮨자열로 하지 않음
     //일반적으로 문자열은 정수데이터보다 많은 메모리 공간을 요구하며
     //정수는 비교연산을 한번에 할 수 있으나, 문자열은 글자 수 만큼 반복하여 비교해야함
-    int student_num;
+    int hakbun;
     int age;
     //가독성과 유지보수를 위해 열거형(enum)으로 하는 것을 추천
     //0:남자 1:여자
-    int gender;
+    int sex;
     string department;
 };
 
@@ -65,9 +66,9 @@ int main() {
     //정적할당 : 메모리의 크기가 컴파일할 때 결정됨
     //Student stu1 = Student("김선희", 2102, 18, 1, "뉴미디어 소프트웨어과");
     //stu1.print();
-    Student stu3[2];
+    /*Student stu3[2];
     for (int i = 0; i < 2; i++)
-        stu3[i].print();
+        stu3[i].print();*/
 
     //동적할당은 무조건 포인터로 해야함
     //TODO: 동적할당 해제하기
@@ -77,6 +78,20 @@ int main() {
     //stu2->print();
    //delete stu2;
     Student* stu4 = new Student[2];
+    stu4[0].set_age(18);
+    stu4[0].set_name("지수");
+    stu4[0].set_hakbun(2112);
+    stu4[0].set_sex(1);
+    stu4[0].set_department("뉴미디어소프트웨어과");
+
+    stu4[1].set_age(18);
+    stu4[1].set_name("혁수");
+    stu4[1].set_hakbun(2118);
+    stu4[1].set_sex(0);
+    stu4[1].set_department("뉴미디어소프트웨어");
+
+
+
     for (int i = 0; i < 2; i++)
         stu4[i].print();  //배열의 요소에 해당하는 객체는 멤버를 .으로 접근
     delete[] stu4;
