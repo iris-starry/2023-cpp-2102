@@ -23,10 +23,13 @@ private:
 
 int main(void)
 {
-	MString str = MString("yakitori tabetai");
+	
+	const int len = 1000;
+	MString* str = new MString("Aitai 2-1");
+	delete str;
 
-	cout << str.c_str() << endl;
-
+	cout << str->c_str() << endl;
+	
 	return 0;
 
 }
