@@ -12,8 +12,10 @@ public:
 		// 필요한 길이만큼 문자열 동적할당
 		c_str_ = new char[str_length + 1];	// '/0'(널문자) 공간 +1
 		strcpy(c_str_, str);
+		cout << "MString 생성자 호출 완료" << endl;
 	}
 	
+	//소멸자(destructor)
 	~MString() {
 		//생성자에 동적할당한 공간을 해제
 		delete[] c_str_;
