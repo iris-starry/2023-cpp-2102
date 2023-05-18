@@ -60,5 +60,8 @@
     <ClCompile Include="문법\복사생성사.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="문법\class과제2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

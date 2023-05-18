@@ -37,4 +37,6 @@ int main(void) {
 
 	Munja m1 = Munja("abc");  // 일반 생성자 호출
 	Munja m2 = m1; // 복사생성자
+
+	return 0;
 }
