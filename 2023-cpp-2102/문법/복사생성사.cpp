@@ -5,27 +5,27 @@ using namespace std;
 
 class Munja{
 public:	
-	// ÀÏ¹İ»ı¼ºÀÚ
+	// ï¿½Ï¹İ»ï¿½ï¿½ï¿½ï¿½ï¿½
 	Munja(const char* str) {
 		// 3("abc") + 1('\0')
 		str_ = new char[strlen(str) + 1];
 
-		strcpy(str_, str); // strÀÇ ³»¿ëÀ» str_¿¡ º¹»ç
-		cout << "ÀÏ¹İ»ı¼ºÀÚ È£Ãâ" << endl;
+		strcpy(str_, str); // strï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ str_ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		cout << "ï¿½Ï¹İ»ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½" << endl;
 	}
 
-	// º¹»ç»ı¼ºÀÚ(¾èÀº º¹»ç·Î ÀÎÇÏ¿© ¹®Á¦Á¡ÀÌ ¹ß»ı)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½)
 	Munja(const Munja& m)
 	{
 		str_ = new char[strlen(m.str_) + 1];
 		strcpy(str_, m.str_);
-		cout << "º¹»ç»ı¼ºÀÚ È£Ãâ" << endl;
+		cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½" << endl;
 	}
 
-	// ¼Ò¸êÀÚ
+	// ï¿½Ò¸ï¿½ï¿½ï¿½
 	~Munja() {
 		delete[] str_; 
-		cout << "¼Ò¸êÀÚ È£Ãâ" << endl;
+		cout << "ï¿½Ò¸ï¿½ï¿½ï¿½ È£ï¿½ï¿½" << endl;
 	}
 private:
 	char* str_;
@@ -35,8 +35,8 @@ private:
 
 int main(void) {
 
-	Munja m1 = Munja("abc");  // ÀÏ¹İ »ı¼ºÀÚ È£Ãâ
-	Munja m2 = m1; // º¹»ç»ı¼ºÀÚ
+	Munja m1 = Munja("abc");  // ï¿½Ï¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È£ï¿½ï¿½
+	Munja m2 = m1; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	return 0;
 }

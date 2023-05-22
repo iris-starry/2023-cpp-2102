@@ -1,5 +1,5 @@
-#include<stdio.h>     //¹®ÀÚ¿­ °ü·Ã ÇÔ¼ö
-#include<string.h>   //std::stringÀÌ µé¾îÀÖÀ½(.h¾ÈµÅ)
+#include<stdio.h>     //ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
+#include<string.h>   //std::stringï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(.hï¿½Èµï¿½)
 int main(void) {
 	char str[30] = "jiwoo";
 	char str2[30] = "rock";
