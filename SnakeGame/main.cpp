@@ -26,6 +26,7 @@ int main(void) {
 				window.close();
 		}
 
+		// input
 		// 네 개의 방향키가 중복으로 input되면 안됨
 		if (Keyboard::isKeyPressed(Keyboard::Up))
 			snake.move(0, -5);
@@ -36,6 +37,14 @@ int main(void) {
 		else if (Keyboard::isKeyPressed(Keyboard::Left))
 			snake.move(-5, 0);
 
+		// update
+
+		// 뱀이 사과를 먹으면
+		if (snake.getGlobalBounds().intersects(apple.getGlobalBounds())) {
+			apple.setPosition(-500, -500);
+		}
+
+		// render
 		window.clear(); 
 
 		window.draw(snake);
