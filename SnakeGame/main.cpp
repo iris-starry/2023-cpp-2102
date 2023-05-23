@@ -5,12 +5,16 @@
 using namespace sf;
 
 int main(void) {
-	sf::RenderWindow  window(VideoMode(640, 480), "Snake Game");
+
+	RenderWindow  window(VideoMode(640, 480), "Snake Game");
 	// 1초에  60번의 작업이 이루어 지도록 frame 조절
 	// 컴퓨터 사양이 달라도 똑같은 속도로 처리함
 	window.setFramerateLimit(60);
 
 	srand(time(NULL));
+
+	// 한 칸을 40으로
+	int block = 40;
 
 	RectangleShape snake;
 	snake.setPosition(200, 300);
@@ -18,7 +22,7 @@ int main(void) {
 	snake.setFillColor(Color::Green);
 
 	RectangleShape apple;
-	apple.setPosition(rand()%640-30, rand()%480-30);
+	apple.setPosition(rand()%640-block, rand()%480-block);
 	apple.setSize(Vector2f(30, 30));
 	apple.setFillColor(Color::Red);
 	
@@ -45,7 +49,7 @@ int main(void) {
 
 		// 뱀이 사과를 먹으면
 		if (snake.getGlobalBounds().intersects(apple.getGlobalBounds())) {
-			apple.setPosition(rand() % 640 - 30, rand() % 480 - 30);
+			apple.setPosition(rand() % 640 - block, rand() % 480 - block);
 		}
 
 		// render
