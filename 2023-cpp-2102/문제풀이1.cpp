@@ -24,6 +24,7 @@ private:
 
 int main(void)
 {
+
 	int arr[] = { 1, 2, 3 };
 	IntArray ia = IntArray(arr, sizeof(arr) / sizeof(*arr));
 	IntArray ca = ia;		// 복사생성자
