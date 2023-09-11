@@ -18,7 +18,8 @@ int main(void){
 	// 4개가 꽉 찬 공간에 데이터 하나를 더 집어 넣어보자
 	arr.push_back(50);
 
-	for (int i = 0; i < 5; i++)
+	// size() 데이터 길이(갯수)
+	for (int i = 0; i < arr.size(); i++)
 		cout << arr[i] << " ";
 
 
