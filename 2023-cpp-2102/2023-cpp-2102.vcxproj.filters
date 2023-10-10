@@ -75,5 +75,8 @@
     <ClCompile Include="맵.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="백터.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
